@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{%block content %}
+
+<h2>Доступні кімнати</h2>
+<ul>
+    {% for room in roooms %}
+    <li>{{room.name}} - Місткість {{room.capacity}} Ціна за ніч {{room.price_per_night}}</li>
+    {%endfor%}
+</ul>
+
+{%endblock%}
